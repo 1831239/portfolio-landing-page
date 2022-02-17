@@ -128,4 +128,8 @@
     font-weight: 600;
     color: white;
   }
+  
+  .tech_name{
+    background-color: #2c323f;
+  }
 }

@@ -64,10 +64,11 @@ class Skills extends React.Component {
         <Fade duration={1000}><div className="App">
           <ul>
             {items.map(item => (
-              <li key={item.id}>
-                {item.skillName}: {item.amount}/100;
-
+              <div width={item.amount}>
+                <li className="tech_name" id={item.skillName} key={item.id}>
+                  {item.skillName}: {item.amount}/100;
                 </li>
+              </div>
             ))}
           </ul>
         </div></Fade>

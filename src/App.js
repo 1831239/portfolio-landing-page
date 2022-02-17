@@ -8,7 +8,6 @@ import Projects from './components/projects/Projects'
 import Skills from './components/skills/Skills'
 import Blog from './components/blog/Blog'
 import Trait from './components/trait/Trait'
-import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import TopButton from './components/topButton/TopButton'
 
@@ -23,7 +22,6 @@ function App() {
       <Education />
       <Projects />
       <Blog />
-      <Contact />
       <Footer />
       <TopButton />
     </div>

@@ -59,6 +59,7 @@ class Trait extends React.Component {
           return <div>Loading...</div>;
 
       return (
+        <div className="traitsSect">
         <Section title="Traits">
         <Fade duration={1000}><div className="App">
         <ul>
@@ -69,7 +70,7 @@ class Trait extends React.Component {
             ))}
           </ul>
         </div></Fade>
-        </Section>
+        </Section></div>
       );
 
   }

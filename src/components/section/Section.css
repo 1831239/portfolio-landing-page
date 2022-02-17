@@ -8,3 +8,16 @@
   margin-bottom: 15px;
   width: 70px;
 }
+ul {
+  list-style-image: url('../../images/logos/checkmark-16.png');
+}
+.tech_name{
+  background-color: #0be779;
+  margin:20px;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+}
+.traitsSect{
+  background-color: #272b33;
+}

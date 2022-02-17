@@ -10,6 +10,9 @@ import Navbar from '../navbar/Navbar'
 import config from '../../config'
 import profile from '../../images/matt.png'
 import linkedin from '../../images/social/linkedin.png'
+import github from '../../images/social/github.png'
+import facebook from '../../images/social/facebook.png'
+import gmail from '../../images/social/gmail.png'
 
 const Home = () => {
   const [imageLoaded, setImageLoaded] = useState(false)
@@ -37,8 +40,8 @@ const Home = () => {
                   strings: [
                     'I like to design things.',
                     'I love learning new tech.',
-                    'I love meeting new people.',
-                    'I create unique digital experiences.',
+                    'I love helping others.',
+                    'I love meeting new people.'
                   ],
                   autoStart: true,
                   loop: true,
@@ -50,19 +53,41 @@ const Home = () => {
             </h1>
             <Bounce cascade>
               <div className="links">
-                <a
-                  href="https://www.linkedin.com/in/iana-shapovalova/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={linkedin} alt="Linkedin Logo" width="50px" />
-                </a>
+              <a
+            href="https://github.com/Iana-Sha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={github} alt="Github Logo" width="40px" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/iana-shapovalova/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedin} alt="Linkedin Logo" width="40px" />
+          </a>
+
+          <a
+            href="https://www.facebook.com/yana.kapeluhova"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={facebook} alt="Facebook Logo" width="40px" />
+          </a>
+          <a
+            href="mailto:yana.kapeluhova@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={gmail} alt="Gmail Logo" width="40px" />
+          </a>
               </div>
             </Bounce>
             <div className="scroll-down">
               <Link
                 activeClass="active"
-                to="about"
+                to="traits"
                 spy={true}
                 smooth={true}
                 offset={-63}
