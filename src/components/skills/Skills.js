@@ -65,7 +65,7 @@ class Skills extends React.Component {
           <ul>
             {items.map(item => (
               <li key={item.id}>
-                {item.skillName}: {item.amount};
+                {item.skillName}: {item.amount}/100;
 
                 </li>
             ))}
