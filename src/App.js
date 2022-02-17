@@ -4,6 +4,7 @@ import Home from './components/home/Home'
 import About from './components/about/About'
 import Experience from './components/experience/Experience'
 import Projects from './components/projects/Projects'
+import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import TopButton from './components/topButton/TopButton'
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Home />
       <About />
+      <Skills />
       <Experience />
       <Projects />
       <Contact />

@@ -24,12 +24,27 @@ const Navbar = () => {
         </div>
         <div className="navlink-wrapper">
           <Link to="about" spy={true} smooth={true} duration={500}>
-            ABOUT
+            PROJECTS
+          </Link>
+        </div>
+        <div className="navlink-wrapper">
+          <Link to="skills" spy={true} smooth={true} duration={500}>
+            SKILLS
+          </Link>
+        </div>
+        <div className="navlink-wrapper">
+          <Link to="home" spy={true} smooth={true} duration={500}>
+            EDUACATION
           </Link>
         </div>
         <div className="navlink-wrapper">
           <Link to="experience" spy={true} smooth={true} duration={500}>
             EXPERIENCE
+          </Link>
+        </div>
+        <div className="navlink-wrapper">
+          <Link to="about" spy={true} smooth={true} duration={500}>
+            BLOG
           </Link>
         </div>
         {/* <div className="navlink-wrapper">
