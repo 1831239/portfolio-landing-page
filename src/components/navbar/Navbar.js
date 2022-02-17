@@ -23,12 +23,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link to="trait" spy={true} smooth={true} duration={500}>
+          <Link to="traits" spy={true} smooth={true} duration={500}>
             TRAITS
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link to="skills" spy={true} smooth={true} duration={500}>
+          <Link to="technologies" spy={true} smooth={true} duration={500}>
             TECHNOLOGIES
           </Link>
         </div>

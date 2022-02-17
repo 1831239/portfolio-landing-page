@@ -60,7 +60,7 @@ class Education extends React.Component {
 
       return (
         <Section title="Education">
-        <Fade duration={1000}><div className="App">
+          <Fade duration={1000}><div className="App">
           <ul>
             {items.map(item => (
               <li key={item.id}>

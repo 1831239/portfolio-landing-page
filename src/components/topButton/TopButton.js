@@ -25,7 +25,7 @@ const TopButton = () => {
   return (
     <Link
       activeClass="active"
-      to="about"
+      to="home"
       spy={true}
       smooth={true}
       duration={500}

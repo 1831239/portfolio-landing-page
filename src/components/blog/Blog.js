@@ -59,7 +59,7 @@ class Blog extends React.Component {
           return <div>Loading...</div>;
 
       return (
-        <Section title="Blog">
+        <Section title="Blog"> 
         <Fade duration={1000}><div className="App">
           <ul>
             {items.map(item => (

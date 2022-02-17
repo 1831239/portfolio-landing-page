@@ -16,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <Home />
-      <About />
       <Trait />
       <Skills />
+      <About />
       <Experience2 />
       <Education />
       <Projects />

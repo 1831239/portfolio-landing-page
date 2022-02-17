@@ -22,14 +22,50 @@ const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
           <div className="mobilenavlink">
             <Link
               activeClass="active"
-              to="about"
+              to="traits"
               spy={true}
               smooth={true}
               offset={1}
               duration={500}
               onClick={toggleMobilenavVisible}
             >
-              ABOUT
+              TRAITS
+            </Link>
+          </div>
+          <div className="mobilenavlink">
+            <Link
+              activeClass="active"
+              to="technologies"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={toggleMobilenavVisible}
+            >
+              TECHNOLOGIES
+            </Link>
+          </div>
+          <div className="mobilenavlink">
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={toggleMobilenavVisible}
+            >
+              PROJECTS
+            </Link>
+          </div>
+          <div className="mobilenavlink">
+            <Link
+              activeClass="active"
+              to="education"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={toggleMobilenavVisible}
+            >
+              EDUCATION
             </Link>
           </div>
           <div className="mobilenavlink">
@@ -47,13 +83,13 @@ const MobileNav = ({ toggleMobilenavVisible, mobilenavVisible }) => {
           <div className="mobilenavlink">
             <Link
               activeClass="active"
-              to="projects"
+              to="blog"
               spy={true}
               smooth={true}
               duration={500}
               onClick={toggleMobilenavVisible}
             >
-              PROJECTS
+              BLOG
             </Link>
           </div>
           <div className="mobilenavlink">
