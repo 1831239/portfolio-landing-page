@@ -59,19 +59,23 @@ class Blog extends React.Component {
           return <div>Loading...</div>;
 
       return (
-        <Section title="Blog"> 
-        <Fade duration={1000}><div className="App">
-          <ul>
-            {items.map(item => (
-              <li key={item.id}>
-                <h3>{item.title}</h3>
-                <h4>{item.datePublished}, {item.author}</h4> 
-                <p>{item.blogContent}</p>
-                </li>
-            ))}
-          </ul>
-        </div></Fade>
-        </Section>
+        <div className='blogSect'>
+          <Section title="Blog"> 
+            <Fade duration={1000}>
+              <div className="App">
+                <ul>
+                  {items.map(item => (
+                    <li key={item.id}>
+                      <h3>{item.title}</h3>
+                      <h4>{item.datePublished}, {item.author}</h4> 
+                      <p>{item.blogContent}</p>
+                      </li>
+                  ))}
+                </ul>
+              </div>
+            </Fade>
+          </Section>
+        </div>
       );
 
   }

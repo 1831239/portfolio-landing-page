@@ -104,58 +104,60 @@ const Projects = () => {
 
   if (loadProjectsError === false) {
     return (
-      <Section title="Projects">
-        <div className="projects-content">
-          <ul className="projects-list">
-            {featured_projects.map((featuredProject) => {
-              return (
-                <li key={`featured-project-${featuredProject.id}`}>
-                  <Fade bottom duration={1000} distance="20px">
-                    <FeaturedProject
-                      name={featuredProject.name}
-                      link={featuredProject.link}
-                      description={featuredProject.description}
-                      colour={featuredProject.colour}
-                      languages={featuredProject.languages}
-                    />
-                  </Fade>
-                </li>
-              )
-            })}
-            {Object.keys(githubProjects).map((repo) => {
-              if (githubProjects[repo].name) {
+      <div className='projSect'>
+        <Section title="Projects">
+          <div className="projSect">
+            <ul className="projSect">
+              {featured_projects.map((featuredProject) => {
                 return (
-                  <li key={githubProjects[repo].name}>
+                  <li key={`featured-project-${featuredProject.id}`}>
                     <Fade bottom duration={1000} distance="20px">
-                      <Project project={githubProjects[repo]} type={'github'} />
+                      <FeaturedProject
+                        name={featuredProject.name}
+                        link={featuredProject.link}
+                        description={featuredProject.description}
+                        colour={featuredProject.colour}
+                        languages={featuredProject.languages}
+                      />
                     </Fade>
                   </li>
                 )
-              } else {
-                return null
-              }
-            })}
-          </ul>
-          <Fade bottom duration={1000} distance="20px">
-            <div className="more-projects-wrapper">
-              <a
-                className="project-link"
-                href={'https://github.com/Iana-Sha'}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  className={classes.moreProjects}
-                  type="button"
-                  variant="contained"
+              })}
+              {Object.keys(githubProjects).map((repo) => {
+                if (githubProjects[repo].name) {
+                  return (
+                    <li key={githubProjects[repo].name}>
+                      <Fade bottom duration={1000} distance="20px">
+                        <Project project={githubProjects[repo]} type={'github'} />
+                      </Fade>
+                    </li>
+                  )
+                } else {
+                  return null
+                }
+              })}
+            </ul>
+            <Fade bottom duration={1000} distance="20px">
+              <div className="more-projects-wrapper">
+                <a
+                  className="project-link"
+                  href={'https://github.com/Iana-Sha'}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  more projects
-                </Button>
-              </a>
-            </div>
-          </Fade>
-        </div>
-      </Section>
+                  <Button
+                    className={classes.moreProjects}
+                    type="button"
+                    variant="contained"
+                  >
+                    more projects
+                  </Button>
+                </a>
+              </div>
+            </Fade>
+          </div>
+        </Section>
+      </div>
     )
   } else {
     return null

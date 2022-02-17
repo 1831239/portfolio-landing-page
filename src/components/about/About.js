@@ -59,20 +59,23 @@ class About extends React.Component {
           return <div>Loading...</div>;
 
       return (
-        <Section title="Projects">
-        <Fade duration={1000}><div className="App">
-          <h1>My Projects</h1>
-          <ul>
-            {items.map(item => (
-              <li key={item.id}>
-                <p><a href={item.link} target="_blank" className="textLink">{item.title}</a>
-                : {item.description} (
-                {item.stack});</p>
-                </li>
-            ))}
-          </ul>
-        </div></Fade>
-        </Section>
+        <div className='projSect'>
+          <Section title="Projects">
+            <Fade duration={1000}>
+              <div className="App">
+                <ul>
+                  {items.map(item => (
+                    <li key={item.id}>
+                      <p><a href={item.link} target="_blank" className="textLink">{item.title}</a>
+                      : {item.description} (
+                      {item.stack});</p>
+                      </li>
+                  ))}
+                </ul>
+              </div>
+            </Fade>
+          </Section>
+        </div>
       );
 
   }

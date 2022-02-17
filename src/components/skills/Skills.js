@@ -60,19 +60,21 @@ class Skills extends React.Component {
 
       return (
         // eslint-disable-next-line react/style-prop-object
-        <Section title="Technologies" style="background:black">
-        <Fade duration={1000}><div className="App">
-          <ul>
-            {items.map(item => (
-              <div width={item.amount}>
-                <li className="tech_name" id={item.skillName} key={item.id}>
-                  {item.skillName}: {item.amount}/100;
-                </li>
+        <div className='skillsSect'>
+          <Section title="Technologies">
+            <Fade duration={1000}>
+              <div className="App">
+                <ul>
+                  {items.map(item => (
+                      <li className="tech_name" id={item.skillName} key={item.id}>
+                        {item.skillName}: {item.amount}/100;
+                      </li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </ul>
-        </div></Fade>
-        </Section>
+            </Fade>
+          </Section>
+        </div>
       );
 
   }

@@ -59,6 +59,7 @@ class Education extends React.Component {
           return <div>Loading...</div>;
 
       return (
+        <div className='educSect'>
         <Section title="Education">
           <Fade duration={1000}><div className="App">
           <ul>
@@ -72,6 +73,7 @@ class Education extends React.Component {
           </ul>
         </div></Fade>
         </Section>
+        </div>
       );
 
   }

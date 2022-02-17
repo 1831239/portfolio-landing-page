@@ -52,16 +52,6 @@ const Navbar = () => {
             BLOG
           </Link>
         </div>
-        {/* <div className="navlink-wrapper">
-          <Link to="projects" spy={true} smooth={true} duration={500}>
-            PROJECTS
-          </Link>
-        </div> */}
-        <div className="navlink-wrapper">
-          <Link to="contact" spy={true} smooth={true} duration={500}>
-            CONTACT
-          </Link>
-        </div>
       </div>
       <div className="hamburger">
         <div

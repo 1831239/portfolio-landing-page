@@ -59,19 +59,23 @@ class Experience2 extends React.Component {
           return <div>Loading...</div>;
 
       return (
-        <Section title="Experience">
-        <Fade duration={1000}><div className="App">
-          <ul>
-            {items.map(item => (
-              <li key={item.id}>
-                <p>{item.title} in <a href={item.link} target="_blank" className="textLink">{item.experienceName}</a> from {item.dateFrom} to {/*(!item.dateTo == null) ? (present = "present") : (present = item.dateTo)}{present*/ item.dateTo}
-                : {item.info} (
-                {item.stack});</p>
-                </li>
-            ))}
-          </ul>
-        </div></Fade>
-        </Section>
+        <div className='ex2Sect'>
+          <Section title="Experience">
+            <Fade duration={1000}>
+              <div className="App">
+                <ul>
+                  {items.map(item => (
+                    <li key={item.id}>
+                      <p>{item.title} in <a href={item.link} target="_blank" className="textLink">{item.experienceName}</a> from {item.dateFrom} to {/*(!item.dateTo == null) ? (present = "present") : (present = item.dateTo)}{present*/ item.dateTo}
+                      : {item.info} (
+                      {item.stack});</p>
+                      </li>
+                  ))}
+                </ul>
+              </div>
+            </Fade>
+          </Section>
+        </div>
       );
 
   }
