@@ -71,9 +71,9 @@ class About extends React.Component {
           <ul>
             {items.map(item => (
               <li key={item.id}>
-                <a href={item.link} target="_blank" className="textLink">{item.title}</a>
+                <p><a href={item.link} target="_blank" className="textLink">{item.title}</a>
                 : {item.description} (
-                {item.stack});
+                {item.stack});</p>
                 </li>
             ))}
           </ul>

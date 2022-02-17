@@ -23,13 +23,18 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link to="about" spy={true} smooth={true} duration={500}>
-            PROJECTS
+          <Link to="trait" spy={true} smooth={true} duration={500}>
+            TRAITS
           </Link>
         </div>
         <div className="navlink-wrapper">
           <Link to="skills" spy={true} smooth={true} duration={500}>
             SKILLS
+          </Link>
+        </div>
+        <div className="navlink-wrapper">
+          <Link to="projects" spy={true} smooth={true} duration={500}>
+            PROJECTS
           </Link>
         </div>
         <div className="navlink-wrapper">
@@ -43,7 +48,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link to="about" spy={true} smooth={true} duration={500}>
+          <Link to="blog" spy={true} smooth={true} duration={500}>
             BLOG
           </Link>
         </div>

@@ -1,17 +1,16 @@
 /* eslint-disable react/style-prop-object */
 import React, { useRef } from 'react'
 import axios from 'axios'
-import './Experience2.css'
+import './Trait.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
 
 
-const url2 = 'https://springboot-mysql-web-app.herokuapp.com/api/v1/projectsapi'
-var present = 'present'
+//const url = 'https://springboot-mysql-web-app.herokuapp.com/api/v1/projectsapi'
 
 //const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
-class Experience2 extends React.Component {
+class Trait extends React.Component {
 
 
   // * constructor
@@ -37,7 +36,7 @@ class Experience2 extends React.Component {
 
   componentDidMount() {
 
-    axios.get('https://springboot-mysql-web-app.herokuapp.com/api/v1/experiencesapi', {
+    axios.get('https://springboot-mysql-web-app.herokuapp.com/api/v1/traitsapi', {
       headers: {
         "Content-Type": "application/json",
       },
@@ -66,14 +65,12 @@ class Experience2 extends React.Component {
           return <div>Loading...</div>;
 
       return (
-        <Section title="Experience">
+        <Section title="Traits">
         <Fade duration={1000}><div className="App">
           <ul>
             {items.map(item => (
               <li key={item.id}>
-                <p>{item.title} in <a href={item.link} target="_blank" className="textLink">{item.experienceName}</a> from {item.dateFrom} to {/*(!item.dateTo == null) ? (present = "present") : (present = item.dateTo)}{present*/ item.dateTo}
-                : {item.info} (
-                {item.stack});</p>
+                {item.traitText};
                 </li>
             ))}
           </ul>
@@ -85,7 +82,7 @@ class Experience2 extends React.Component {
 
 }
 
-export default Experience2;
+export default Trait;
 
 
 
@@ -98,14 +95,14 @@ export default Experience2;
 
 /*
 import React from 'react'
-import './Experience2.css'
+import './About.css'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
 import Skills from '../skills/Skills'
 
-const Experience2 = () => {
+const About = () => {
   return (
     <Section title="Projects">
       <div className="about-content">
@@ -206,5 +203,5 @@ const Experience2 = () => {
   )
 }
 
-export default Experience2
+export default About
 */

@@ -8,6 +8,7 @@ import Education from './components/education/Education'
 import Projects from './components/projects/Projects'
 import Skills from './components/skills/Skills'
 import Blog from './components/blog/Blog'
+import Trait from './components/trait/Trait'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import TopButton from './components/topButton/TopButton'
@@ -17,10 +18,10 @@ function App() {
     <div className="App">
       <Home />
       <About />
+      <Trait />
       <Skills />
       <Experience2 />
       <Education />
-      <Experience />
       <Projects />
       <Blog />
       <Contact />
