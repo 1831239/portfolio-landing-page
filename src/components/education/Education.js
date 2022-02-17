@@ -1,14 +1,8 @@
-/* eslint-disable react/style-prop-object */
-import React, { useRef } from 'react'
+import React from 'react'
 import axios from 'axios'
 import './Education.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
-
-
-//const url = 'https://springboot-mysql-web-app.herokuapp.com/api/v1/projectsapi'
-
-//const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 class Education extends React.Component {
 

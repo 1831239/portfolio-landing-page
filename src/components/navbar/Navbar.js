@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <div className="navlink-wrapper">
           <Link to="skills" spy={true} smooth={true} duration={500}>
-            SKILLS
+            TECHNOLOGIES
           </Link>
         </div>
         <div className="navlink-wrapper">
@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         <div className="navlink-wrapper">
           <Link to="education" spy={true} smooth={true} duration={500}>
-            EDUACATION
+            EDUCATION
           </Link>
         </div>
         <div className="navlink-wrapper">

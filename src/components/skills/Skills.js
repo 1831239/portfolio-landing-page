@@ -1,14 +1,8 @@
-/* eslint-disable react/style-prop-object */
-import React, { useRef } from 'react'
+import React from 'react'
 import axios from 'axios'
 import './Skills.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
-
-
-//const url = 'https://springboot-mysql-web-app.herokuapp.com/api/v1/projectsapi'
-
-//const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 class Skills extends React.Component {
 
@@ -65,12 +59,13 @@ class Skills extends React.Component {
           return <div>Loading...</div>;
 
       return (
-        <Section title="Projects">
+        // eslint-disable-next-line react/style-prop-object
+        <Section title="Technologies" style="background:black">
         <Fade duration={1000}><div className="App">
           <ul>
             {items.map(item => (
               <li key={item.id}>
-                {item.skillName} {item.amount}
+                {item.skillName}: {item.amount};
 
                 </li>
             ))}
