@@ -33,7 +33,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navlink-wrapper">
-          <Link to="home" spy={true} smooth={true} duration={500}>
+          <Link to="education" spy={true} smooth={true} duration={500}>
             EDUACATION
           </Link>
         </div>
