@@ -1,16 +1,17 @@
 /* eslint-disable react/style-prop-object */
 import React, { useRef } from 'react'
 import axios from 'axios'
-import './About.css'
+import './Experience2.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
 
 
-//const url = 'https://springboot-mysql-web-app.herokuapp.com/api/v1/projectsapi'
+const url2 = 'https://springboot-mysql-web-app.herokuapp.com/api/v1/projectsapi'
+var present = 'present'
 
 //const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
-class About extends React.Component {
+class Experience2 extends React.Component {
 
 
   // * constructor
@@ -36,7 +37,7 @@ class About extends React.Component {
 
   componentDidMount() {
 
-    axios.get('https://springboot-mysql-web-app.herokuapp.com/api/v1/projectsapi', {
+    axios.get('https://springboot-mysql-web-app.herokuapp.com/api/v1/experiencesapi', {
       headers: {
         "Content-Type": "application/json",
       },
@@ -65,14 +66,14 @@ class About extends React.Component {
           return <div>Loading...</div>;
 
       return (
-        <Section title="Projects">
+        <Section title="Experience">
         <Fade duration={1000}><div className="App">
-          <h1>My Projects</h1>
+          <h1>My work experiences</h1>
           <ul>
             {items.map(item => (
               <li key={item.id}>
-                <a href={item.link} target="_blank" className="textLink">{item.title}</a>
-                : {item.description} (
+                {item.title} in <a href={item.link} target="_blank" className="textLink">{item.experienceName}</a> from {item.dateFrom} to {/*(!item.dateTo == null) ? (present = "present") : (present = item.dateTo)}{present*/ item.dateTo}
+                : {item.info} (
                 {item.stack});
                 </li>
             ))}
@@ -85,7 +86,7 @@ class About extends React.Component {
 
 }
 
-export default About;
+export default Experience2;
 
 
 
@@ -98,14 +99,14 @@ export default About;
 
 /*
 import React from 'react'
-import './About.css'
+import './Experience2.css'
 import Typewriter from 'typewriter-effect'
 import { Link } from 'react-scroll'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
 import Skills from '../skills/Skills'
 
-const About = () => {
+const Experience2 = () => {
   return (
     <Section title="Projects">
       <div className="about-content">
@@ -206,5 +207,5 @@ const About = () => {
   )
 }
 
-export default About
+export default Experience2
 */

@@ -86,7 +86,7 @@
   width: 0%;
   left: 50%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 880px) {
   .profile {
     width: 120px;
   }
@@ -97,7 +97,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 879px) {
   .navlinks {
     display: none;
   }
