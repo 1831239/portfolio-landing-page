@@ -25,6 +25,11 @@
   color: #0be779;
   cursor: pointer;
 }
+.textLink2 {
+  color: #0be779;
+  cursor: pointer;
+  margin-left: 70px;
+}
 .location-wrapper {
   display: flex;
   align-items: center;
@@ -62,6 +67,14 @@
   background-color: #0be779;
   border-radius: 2px 0px 0px 2px;
 }
+
+#iana_personality{
+  width:50%;
+  border-radius: 2%;
+  float:right;
+  margin:20px
+}
+
 @media screen and (min-width: 960px) {
   .about-content {
     display: flex;

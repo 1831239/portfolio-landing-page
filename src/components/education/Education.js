@@ -3,6 +3,7 @@ import axios from 'axios'
 import './Education.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
+import iana_education from "../../images/social/educationPic.jpg";
 
 class Education extends React.Component {
 
@@ -62,7 +63,7 @@ class Education extends React.Component {
         <div className='educSect'>
         <Section title="Education">
           <Fade duration={1000}><div className="App">
-          <ul>
+          <ul><img id="iana_personality" src={iana_education}></img>
             {items.map(item => (
               <li key={item.id}>
                 <a href={item.link} target="_blank" className="textLink">{item.educationName}</a> From {item.dateFrom} to {item.dateTo}<br></br>Program: {item.program}<p>{item.info}</p>

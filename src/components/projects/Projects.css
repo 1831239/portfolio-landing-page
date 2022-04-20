@@ -29,6 +29,14 @@
   display: flex;
   justify-content: center;
 }
+
+#iana_projects{
+  width:50%;
+  border-radius: 2%;
+  float:right;
+  marigin:20px
+}
+
 @media screen and (max-width: 599px) {
   .projects-list {
     width: 100%;

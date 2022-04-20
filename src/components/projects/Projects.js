@@ -107,6 +107,7 @@ const Projects = () => {
       <div className='projSect'>
         <Section title="Projects">
           <div className="projSect">
+
             <ul className="projSect">
               {featured_projects.map((featuredProject) => {
                 return (

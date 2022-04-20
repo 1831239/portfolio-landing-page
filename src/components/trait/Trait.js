@@ -3,6 +3,7 @@ import axios from 'axios'
 import './Trait.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
+import iana_personality from '../../images/social/iana_personality.jpg'
 
 class Trait extends React.Component {
 
@@ -62,13 +63,15 @@ class Trait extends React.Component {
         <div className="traitsSect">
         <Section title="Traits">
         <Fade duration={1000}><div className="App">
-        <ul>
+        <ul><img id="iana_personality" src={iana_personality}></img>
             {items.map(item => (
               <li key={item.id}>
                 {item.traitText};
                 </li>
             ))}
+
           </ul>
+
         </div></Fade>
         </Section></div>
       );

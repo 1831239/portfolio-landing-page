@@ -11,13 +11,46 @@
 ul {
   list-style-image: url('../../images/logos/checkmark-16.png');
 }
-.tech_name{
-  background-color: #0be779;
-  margin:20px;
-  padding: 10px;
-  border-radius: 20px;
-  color: black;
+
+@media screen and (min-width: 1078px) {
+  #smallList{display:none}
+  #bigList{display:block}
+
+  .tech_name{
+    background-color: #0be779;
+    position:absolute;
+    padding: 10px;
+    padding-left: 10px;
+    transform: translate(0px, -12.5px);
+    border-radius: 20px;
+    color: black;
+  }
+
+  .tech_nameToend{
+    background-color: white;
+    position:absolute;
+    padding: 10px;
+    padding-left: 10px;
+    transform: translate(0px, -12.5px);
+    border-radius: 20px;
+    color: white;
+  }
+
+  .tech_nameContainer{
+    margin:20px;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 20px;
+  }
+
 }
+@media screen and (max-width: 1077px) {
+  #smallList{display:block}
+  #bigList{display:none}
+  span{ color:white; background-color:#3e4555 }
+}
+
+
 .traitsSect, .educSect, .projSect{
   background-color: #2c323f;
   padding-bottom: 90px;

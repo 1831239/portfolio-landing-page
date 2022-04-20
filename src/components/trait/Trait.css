@@ -82,6 +82,19 @@
     color: white;
   }
 }
+
+#iana_personality{
+  width:50%;
+  border-radius: 2%;
+  float:right;
+  margin:20px;
+}
+
+li{
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
 @media screen and (max-width: 959px) and (min-width: 600px) {
   .about-content {
     display: flex;

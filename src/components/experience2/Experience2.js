@@ -3,6 +3,9 @@ import axios from 'axios'
 import './Experience2.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
+import iana_personality from '../../images/social/zelexio.PNG'
+import iana_cvFR from '../../cvs/shapovalova-Iana-CV-Fr.pdf'
+import iana_cvEn from '../../cvs/shapovalova-Iana-CV-En.pdf'
 
 class Experience2 extends React.Component {
 
@@ -63,7 +66,7 @@ class Experience2 extends React.Component {
           <Section title="Experience">
             <Fade duration={1000}>
               <div className="App">
-                <ul>
+                <ul><img id="iana_personality" src={iana_personality}></img>
                   {items.map(item => (
                     <li key={item.id}>
                       <p>{item.title} in <a href={item.link} target="_blank" className="textLink">{item.experienceName}</a> from {item.dateFrom} to {/*(!item.dateTo == null) ? (present = "present") : (present = item.dateTo)}{present*/ item.dateTo}
@@ -72,6 +75,12 @@ class Experience2 extends React.Component {
                       </li>
                   ))}
                 </ul>
+                  <a className="textLink2" href={iana_cvFR} download>
+                      Download CV in French
+                  </a><br></br>
+                  <a className="textLink2" href={iana_cvEn} download>
+                      Download CV in English
+                  </a>
               </div>
             </Fade>
           </Section>

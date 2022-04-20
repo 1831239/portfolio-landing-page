@@ -3,6 +3,7 @@ import axios from 'axios'
 import './Blog.css'
 import { Fade } from 'react-reveal'
 import Section from '../section/Section'
+import iana_blog from '../../images/social/discussion-two-people.jpg'
 
 class Blog extends React.Component {
 
@@ -63,7 +64,7 @@ class Blog extends React.Component {
           <Section title="Blog"> 
             <Fade duration={1000}>
               <div className="App">
-                <ul>
+                <ul><img id="iana_blog" src={iana_blog}></img>
                   {items.map(item => (
                     <li key={item.id}>
                       <h3>{item.title}</h3>
